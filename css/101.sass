@@ -1,0 +1,397 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700)
+
+*
+	box-sizing: border-box
+
+html
+	font-size: 14px
+	font-family: "Montserrat", "sans"
+
+body
+	padding: 0
+	margin: 0
+
+.my-container
+	margin: 0 auto
+	max-width: 1177px
+	width: 90%
+	@media only screen and (max-width: 1199px) and (min-width: 960px)
+		min-width: 960px
+	@media only screen and (max-width: 959px) and (min-width: 768px)
+		min-width: 768px
+	@media only screen and (max-width: 767px) and (min-width: 550px)
+		min-width: 550px
+
+.header
+	position: fixed
+	top: 0
+	left: 50%
+	transform: translate(-50%)
+	height: 130px
+	padding: 5px 0
+	background-color: #fff
+	z-index: 3
+	margin: 0 -1px
+	@media only screen and (max-width: 767px) 
+		width: 100%
+		height: 40px
+		opacity: .95
+		padding: 0
+
+.logo
+	float: left
+	width: 280px
+	@media only screen and (max-width: 1199px) and (min-width: 960px)
+		width: 150px
+	@media only screen and (max-width: 959px) and (min-width: 768px)
+		width: 172px
+	@media only screen and (max-width: 767px) 
+		display: none
+
+.logo img
+	width: 100%
+	height: auto
+
+.top
+	@media only screen and (max-width: 767px)
+		display: none
+
+.place
+	color: #ababab
+	padding-top: 32px
+	padding-left: 20px
+	float: left
+	text-align: center
+	font-size: 1rem
+
+.social
+	float: right
+	margin: 20px 22px 0 0
+
+.social > div 
+	width: 40px
+	height: 40px
+	margin-left: 25px
+	background: url('../img/sprite.gif') center 0 no-repeat
+	background-size: 100%
+	float: left
+
+.social > .soc-facebook
+	background-position-y: -47px
+
+.social > .soc-pinterest
+	background-position-y: -95px
+
+.social > .soc-instagram
+	background-position-y: -143px
+
+nav.mobile
+	display: none
+	box-shadow: none
+	@media only screen and (max-width: 767px)
+		display: block
+		line-height: 45px
+
+nav .caption-menu,
+nav .caption-card
+	display: inline-block
+	font-size: 1.586rem
+	color: #949599
+	text-transform: uppercase
+	padding: 0 5px
+	
+
+nav.desktop
+	float: right
+	width: auto
+	margin: 21px 16px 0 0
+	background-color: transparent
+	box-shadow: none
+	@media only screen and (max-width: 767px)
+		display: none
+
+nav.desktop ul li,
+.footer ul li 	
+	display: inline-block
+	padding: 10px 15px 10px 4px
+	line-height: 0
+	
+nav.desktop ul a,
+.footer ul a
+	color: #949599
+	font-size: 1.5rem
+	text-transform: uppercase
+	letter-spacing: 1px
+	padding: 0
+	text-decoration: none
+	&:hover
+		background-color: transparent
+		color: #303030
+	@media only screen and (max-width: 1199px) and (min-width: 960px)
+		font-size:  1.286rem
+	@media only screen and (max-width: 959px) and (min-width: 768px)
+		font-size:  0.8571rem
+
+nav.mobile
+	background-color: rgba(245, 245, 245, .95)
+	height: 40px
+	border-bottom: 1px solid #cfcfcf
+
+nav.mobile a.button-collapse i
+	line-height: 42px
+	color: black
+	padding-left: 10px
+
+.mob-nav-left .mdi-navigation-menu
+	&:before 
+		content: "\e8af"
+
+.mob-nav-right .mdi-navigation-menu
+	&:before 
+		content: "\e676"
+
+.mdi-navigation-menu
+	font-size: 2.5rem
+
+.mob-nav-left
+	float: left
+
+.mob-nav-right
+	float: right
+
+
+.logo-mobile
+	display: none
+	& img
+		max-width: 100%
+	@media only screen and (max-width: 767px) 
+		width: 90%
+		margin: 0 auto
+		padding-bottom: 100px
+		display: block
+		text-align: center
+		padding-bottom: 15px
+
+.side-nav
+	height: initial
+	background-color: #333
+	& a
+		color: inherit
+		height: 55px
+		text-transform: capitalize
+		border-bottom: 1px solid black
+	& li
+		padding: 0 0 0 15px
+		& input
+			background: rgba(255, 255, 255, 0.3)
+			color: rgba(255, 255, 255, 0.6)
+			padding-left: 15px
+
+.main
+	margin-top: 150px
+	@media only screen and (max-width: 767px)
+		margin-top: 0
+
+.slider
+	height: 540px !important
+	margin-bottom: -30px
+	@media only screen and (max-width: 1199px) and (min-width: 960px)
+		height: 440px !important
+	@media only screen and (max-width: 959px) and (min-width: 768px)
+		height: 340px !important
+	@media only screen and (max-width: 767px)
+		height: 240px !important
+
+.slides
+	height: 500px !important
+	@media only screen and (max-width: 1199px) and (min-width: 960px)
+		height: 400px !important
+	@media only screen and (max-width: 959px) and (min-width: 768px)
+		height: 300px !important
+	@media only screen and (max-width: 767px)
+		height: 200px !important
+
+.slider .indicators
+	z-index: 2
+	bottom: 43px
+
+.slider .indicators .indicator-item
+	width: 36px 
+	height: 6px 
+	border-radius: 0 
+	margin: 0 3px
+	background-color: rgba(155, 155, 155, .5) 
+
+.slider .indicators .indicator-item.active
+	background-color: rgba(255, 255, 255, 1)
+
+.portfolio,
+.services,
+.seo,
+.packaging-collateral,
+.reviews,
+.extracs,
+.purse-projacts
+	display: inline-block
+	vertical-align: top
+	margin-bottom: 5px
+	@media only screen and (max-width: 767px)
+		width: 100%
+		margin-bottom: 0
+
+.portfolio,
+.services
+	width: 49%
+	@media only screen and (max-width: 767px)
+		width: 100%
+		margin-bottom: 0
+		height: inherit
+
+.portfolio
+	margin-right: 1%
+
+.your-quote-request
+	max-width: 1177px
+	@media only screen and (max-width: 1199px) and (min-width: 960px)
+		max-width: 960px
+
+.pages img
+	max-width: 100%
+	@media only screen and (max-width: 767px)
+		width: 100%
+
+h3
+	text-align: right
+	color: #949599
+	padding-bottom: 5px
+	margin: 0px
+	font-size:  2.643rem
+	font-weight: normal
+	margin-top: 5px
+
+.carousel
+	overflow: hidden
+	width: 100%
+	height: auto
+	padding: 0 20px
+	margin: 0 auto
+
+.slide
+	width: 131px
+	height: 100px
+
+.pure-js-carousel-dots
+	display: none
+
+.pure-js-carousel-btn
+	border-style: solid
+	opacity: .75
+	background-color: transparent
+	margin: 0
+	position: relative
+	visibility: visible !important
+	z-index: 50
+	top: -65px
+	&:hover
+		opacity: 1
+	&:disabled
+		opacity: .25
+	&:focus
+		background-color: transparent
+
+.pure-js-carousel-btn-prev
+	border-width: 11.5px 13px 11.5px 0
+	border-color: transparent #949599 transparent transparent
+	left: -20px
+	visibility: visible !important
+
+.pure-js-carousel-btn-next
+	border-width: 11.5px 0 11.5px 13px
+	border-color: transparent transparent transparent #949599
+	float: right
+	right: -20px
+	visibility: visible !important
+
+button
+	padding: 0
+
+.wide-container
+	width: 100%
+	background-color: #949599
+	height: auto
+
+.container-text
+	float: left
+	color: #fff
+	width: 45%
+	margin-top: 12px
+	@media only screen and (max-width: 767px)
+		width: 80%
+		float: none
+		margin: 0 auto
+		padding-top: 12px
+	& h2
+		font-size: 2.286rem
+		font-weight: normal
+		margin-bottom: 0.2em
+		line-height: 2rem
+	& p
+		line-height: 1.4rem
+		font-size: 0.9286rem
+		width: 90%
+
+#contact-form
+	float: right
+	margin: 45px 0 0 0
+	width: 45%
+	@media only screen and (max-width: 767px)
+		width: 80%
+		float: none
+		margin: 0 auto
+
+	& .newsletter-email
+		width: 70%
+		height: 16px
+		float: left
+		border: 1px solid #ccc
+		padding: 12px 8px 12px 12px
+		outline: none
+		font-size: 0.9286rem
+		color: #949599
+		margin-bottom: 20px
+		background: #fff
+		transition: border-color 0.2s linear, box-shadow 0.2s ease
+		&:focus
+			box-shadow: none
+
+	& .newsletter-join
+		float: right
+		border: 1px solid #fff
+		background: #949599
+		color: #fff
+		height: 42px
+		width: 23%
+
+.join-us:after
+	content: ""
+	display: block
+	width: 100%
+	clear: both
+
+.footer
+	margin: 0 auto
+	padding: 20px 0		
+
+.footer ul
+	margin-left: 20px
+
+.footer ul a
+	font-size: 0.8571rem
+	letter-spacing: 0
+
+.footer-logo
+	margin: 0 auto
+	width: 150px
+	& img
+		width: 100%
+		height: auto
